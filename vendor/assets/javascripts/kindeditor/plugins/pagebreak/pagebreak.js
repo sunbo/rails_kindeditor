@@ -10,7 +10,8 @@
 KindEditor.plugin('pagebreak', function(K) {
 	var self = this;
 	var name = 'pagebreak';
-	var pagebreakHtml = K.undef(self.pagebreakHtml, '<hr style="page-break-after: always;" class="ke-pagebreak" />');
+	//var pagebreakHtml = K.undef(self.pagebreakHtml, '<hr style="page-break-after: always;" class="ke-pagebreak" />');
+	var pagebreakHtml = K.undef(self.pagebreakHtml, '<hr />');
 
 	self.clickToolbar(name, function() {
 		var cmd = self.cmd, range = cmd.range;
