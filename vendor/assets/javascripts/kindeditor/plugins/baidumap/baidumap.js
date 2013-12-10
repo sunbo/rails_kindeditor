@@ -11,8 +11,8 @@
 
 KindEditor.plugin('baidumap', function(K) {
 	var self = this, name = 'baidumap', lang = self.lang(name + '.');
-	var mapWidth = K.undef(self.mapWidth, 558);
-	var mapHeight = K.undef(self.mapHeight, 360);
+	var mapWidth = K.undef(self.mapWidth, 1000);
+	var mapHeight = K.undef(self.mapHeight, 600);
 	self.clickToolbar(name, function() {
 		var html = ['<div style="padding:10px 20px;">',
 			'<div class="ke-header">',
@@ -25,7 +25,7 @@ KindEditor.plugin('baidumap', function(K) {
 			'</div>',
 			// right start
 			'<div class="ke-right">',
-			'<input type="checkbox" id="keInsertDynamicMap" name="insertDynamicMap" value="1" /> <label for="keInsertDynamicMap">' + lang.insertDynamicMap + '</label>',
+			'<input type="hidden" id="keInsertDynamicMap" name="insertDynamicMap" value="1" checked="checked" />',
 			'</div>',
 			'<div class="ke-clearfix"></div>',
 			'</div>',
